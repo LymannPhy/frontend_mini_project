@@ -51,7 +51,7 @@ npm install npm@latest -g
 1. Clone the repo
 
 ```sh
-git clone https://github.com/fajar7xx/ecommerce-template-tailwind-1
+git clone https://github.com/LymannPhy/frontend_mini_project.git
 ```
 
 2. Install NPM packages
