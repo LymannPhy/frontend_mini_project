@@ -5,17 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Page - Ecommerce Tailwind</title>
-
-    <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" type="image/x-icon">
-
+    <title>SweatHome - Shop</title>
+    <meta name="description" content="Discover the best home decor products at SweatHome. Shop for furniture, accents, and more to transform your living space.">
+    <meta name="keywords" content="SweatHome, home decor, furniture, accents, shop, interior design">
+    <meta name="author" content="Your Name or Company Name">
+    <link rel="shortcut icon" href="/public/assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/main.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,71 +22,27 @@
 <body>
     <!-- header -->
     <header>
-        <nav class="flex justify-between bg-gray-800 text-white w-screen">
-            <div class="px-5 xl:px-12 py-6 flex w-full items-center">
-                <a class="text-3xl font-bold font-heading text-primary" href="/public/index.html">
-                    <!-- <img class="h-9" src="logo.png" alt="logo"> -->
-                    C-STORE
-                </a>
-                <!-- Nav Links -->
-                <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
-                    <li><a class="hover:text-gray-200" href="/public/index.html">Home</a></li>
-                    <li><a class="hover:text-gray-200" href="/public/pages/shop.html">Shop</a></li>
-                    <li><a class="hover:text-gray-200" href="/public/pages/about.html">About Us</a></li>
-                    <li><a class="hover:text-gray-200" href="/public/pages/contact.html">Contact</a></li>
-                </ul>
-                <!-- Header Icons -->
-                <div class="hidden xl:flex items-center space-x-5 items-center">
-                    <a class="hover:text-gray-200" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                        </svg>
-                    </a>
-                    <a class="flex items-center hover:text-gray-200" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                        <span class="flex absolute -mt-5 ml-4">
-                            <span
-                                class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
-                            </span>
-                        </span>
-                    </a>
-                    <!-- Sign In / Register      -->
-                    <a class="flex items-center hover:text-gray-200" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </a>
-
+        <nav>
+            <div class="flex flex-wrap items-center justify-between bg-slate-800 md:p-5">
+                <div class="p-3 px-4 text-2xl text-primary">SweatHome</div>
+                <div class="p-3 md:hidden">
+                    <img id="menu-button"
+                        class="h-6 bg-white transition-opacity duration-500 ease-in-out cursor-pointer hover:opacity-[0.5]"
+                        src="/public/assets/images/R.png" alt="list icon">
+                </div>
+                <div id="menu" class="hidden md:block">
+                    <ul class="items-center w-screen md:w-auto md:flex ">
+                        <li class="p-4 text-gray-500 border-b border-gray-600 hover:text-gray-300 md:border-0"><a
+                            href="/public/index.html">Home</a></li>
+                        <li class="p-4 text-gray-300 border-b border-gray-600 md:border-0 "><a
+                                href="/public/pages/shop.html">Shop</a></li>
+                        <li class="p-4 text-gray-500 border-b border-gray-600 hover:text-gray-300 md:border-0"><a
+                                href="/public/pages/about.html">About Us</a></li>
+                        <li class="p-4 text-gray-500 border-b border-gray-600 hover:text-gray-300 md:border-0"><a
+                                href="/public/pages/contact.html">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-            <!-- Responsive navbar -->
-            <a class="xl:hidden flex mr-6 items-center" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-                <span class="flex absolute -mt-5 ml-4">
-                    <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
-                    </span>
-                </span>
-            </a>
-            <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </a>
         </nav>
     </header>
     <!-- end header -->
@@ -737,7 +691,7 @@
                 <img src="/public/assets/images/logo.png" alt="logo" class="w-20">
                 <div class="mr-2">
                     <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, hic?
+                        Welcome to HOMECARE – your ultimate destination for all things furniture and home decor!
                     </p>
                 </div>
                 <div class="flex space-x-5">
@@ -804,7 +758,7 @@
     <!-- copyright -->
     <div class="bg-gray-800 py-4">
         <div class="container flex items-center justify-between">
-            <p class="text-white">&copy; TailCommerce - All Right Reserved</p>
+            <p class="text-white">&copy; SweatHome - All Right Reserved</p>
             <div>
                 <img src="../assets/images/methods.png" alt="methods" class="h-5">
             </div>
@@ -812,10 +766,7 @@
     </div>
     <!-- ./copyright -->
 
-
-
-
-
+    <script src="/public/assets/js/navbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
