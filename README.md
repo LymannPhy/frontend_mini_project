@@ -1,79 +1,23 @@
-<br/>
-<p align="center">
-  <h3 align="center">CSTORE Ecommerce Tailwind Template</h3>
+# SweatHome
 
-  <p align="center">
-    CTORE is an ecommerce template using tailwind css
-    <br/>
-    <br/>
-  </p>
-</p>
+SweatHome is an application created to facilitate the sale of various materials such as sofas, furniture, and chairs for home decoration. Whether you're looking to spruce up your living room, bedroom, dining room, or outdoor spaces, SweatHome aims to provide a seamless shopping experience for all your home decor needs.
 
+## Website Links
 
+- **Home:** [SweatHome Home Page](https://lymannphy.github.io/frontend_mini_project/index.html)
+- **Shop:** [SweatHome Shop Page](https://lymannphy.github.io/frontend_mini_project/public/pages/shop.html)
+- **About Us:** [About SweatHome](https://lymannphy.github.io/frontend_mini_project/public/pages/about.html)
+- **Contact:** [Contact SweatHome](https://lymannphy.github.io/frontend_mini_project/public/pages/contact.html)
 
-## About The Project
+## Cloning the Repository
 
-![Screen Shot](screenshots/Ecommerce-Tailwind.png)
-
-Ecommerce Tailwind project.
-
-## Screenshots
-<details>
-<summary>Homepage</summary>
-
-![Homepage](screenshots/Ecommerce-Tailwind.png)
-</details>
-
-<details>
-<summary>Shop</summary>
-</details>
-
-<details>
-<summary>About Us</summary>
-</details>
-
-<details>
-<summary>Contact</summary>
-</details>
-
-## Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-
-* npm
-
-```sh
-npm install npm@latest -g
-```
-
-### Installation
-
-1. Clone the repo
-
-```sh
+To get started with SweatHome, you can clone the repository using the following command:
 git clone https://github.com/LymannPhy/frontend_mini_project.git
-```
 
-2. Install NPM packages
 
-```sh
-npm install
-```
+## Author
 
-3. run npm watch
+SweatHome is created and maintained by Phy Lymann. For any inquiries or feedback, feel free to reach out.
 
-```sh
-npm run watch
-```
 
-### Creating A Pull Request
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## Authors
-Lymann Phy
 
